@@ -1,0 +1,82 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char** argv) {
+	cout << "Witam w kalkulatorze" << endl;
+	float a;
+	float b;
+	float wynik;
+	char yn;
+		poczatek:
+	int kalkulator = 1;
+	if (kalkulator = 1){
+		cout << "Wpisz pierwsza liczbe:" << endl;
+		cin >> a;
+		cout << "Jaka operacje chcesz wykonac?" << endl;
+		cout << "( 1 ) dodawanie" << endl;
+		cout << "( 2 ) odejmowanie" << endl;
+		cout << "( 3 ) mnozenie" << endl;
+		cout << "( 4 ) dzielenie" << endl;
+		cout << "Wybierz: ";
+		znak:
+		int znak = 0;
+		cin >> znak;
+		if(znak==1){
+			goto druga;		
+		}
+		else if(znak==2){
+			goto druga;	
+		}
+		else if(znak==3){
+			goto druga;		
+		}
+		else if(znak==4){
+			goto druga;		
+		}
+		else{
+			cout << "Wybierz liczbe miedzy 1-4" << endl;
+			goto znak;
+		}
+		druga:
+		cout << "Wpisz druga liczbe:" << endl;
+		cin >> b;
+		if(znak==1){
+			wynik = a+b;
+			cout << "Twoj wynik to: " << wynik << endl;
+		}
+		else if(znak==2){
+			wynik = a-b;
+			cout << "Twoj wynik to: " << wynik << endl;
+		}
+		else if(znak==3){
+			wynik = a*b;
+			cout << "Twoj wynik to: " << wynik << endl;
+		}
+		else if(znak==4){
+			if(b!=0){
+				wynik = a/b;
+				cout << "Twoj wynik to: " << wynik << endl;	
+			}
+			else{
+			cout << "Nie mozna dzielic przez 0";
+			}
+		}
+		cout << "Czy chcesz jeszcze cos obliczyc? (y/n)" << endl;
+		yesno:
+		cin >> yn;
+		if(yn == 'y'){
+			system("cls");
+			goto poczatek;
+		}
+		else if(yn == 'n'){
+			system("cls");
+			cout << "Milego dnia :)" << endl;
+		}
+		else{
+			cout << "Wybierz (y/n)" << endl;
+			goto yesno;
+		}
+	} 
+	return 0;
+}
