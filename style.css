@@ -2,7 +2,7 @@ body
 {
   /*background-image: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(129,221,126,1) 22%, rgba(240,253,45,1) 100%);*/
   background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgba(23,23,23,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 9%, rgb(31, 6, 29) 100%);
   padding: 0px;
 	margin: 0px;
   height: 100vh;
@@ -55,7 +55,7 @@ h1
   font-family: 'Bungee Shade', cursive;
   margin-left: 40vw;
   margin-right: 10vw;
-  font-size: 4vw;
+  font-size: 2vw;
   float: left;
   transition: 0.5s;
   color: #ff00bf;
@@ -68,9 +68,9 @@ h2
   position: relative;
   margin-left: 40vw;
   margin-right: 10vw;
-  top: -6vw;
+  top: -3vw;
   left: 1vw;
-  font-size: 2vw;
+  font-size: 1vw;
   float: left;
   transition: 0.5s;
   color: #ff00bf;
